@@ -1,0 +1,6 @@
+@import '../../styles/variables.scss';
+.footer {
+   @include layoutElementStyle;
+   @include flexCenter;
+   height: 60px;
+}

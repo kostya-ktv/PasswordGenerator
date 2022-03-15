@@ -1,0 +1,9 @@
+@import '../../styles/variables.scss';
+.box {
+   @include fontSettings;
+   @include flexCenter;
+   flex: 1;
+   input {
+      margin-right: 5px;
+   }
+}

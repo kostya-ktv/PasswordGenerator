@@ -1,0 +1,11 @@
+@import '../../styles/variables.scss';
+.header {
+   @include layoutElementStyle;
+   @include flexCenter;
+   position: relative;
+   height: 60px; 
+}
+
+.menu {
+   @include flexCenter;
+}

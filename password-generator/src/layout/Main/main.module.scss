@@ -1,0 +1,8 @@
+@import '../../styles/variables.scss';
+
+.main {
+   @include layoutElementStyle;
+   flex: 2;
+   position: relative;
+   background-color: antiquewhite;
+}

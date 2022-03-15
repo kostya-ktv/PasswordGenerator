@@ -1,0 +1,17 @@
+@import '../styles/variables.scss';
+
+.box {
+   @include center;
+   border-radius: $borderRadius;
+   display: flex;
+   flex-direction: column;
+   position: absolute;
+   height: 400px;
+   width: 500px;
+   box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.6);
+   background: linear-gradient(180deg, #353A40 0%, #16171B 100%);
+}
+.wrap {
+   flex: 2;
+   display: flex;
+}
