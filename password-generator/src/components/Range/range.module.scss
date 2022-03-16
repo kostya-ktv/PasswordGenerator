@@ -1,5 +1,8 @@
 @import '../../styles/variables.scss';
 
 .box {
-   @include flexCenter;
+   @include fontSettings;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
 }

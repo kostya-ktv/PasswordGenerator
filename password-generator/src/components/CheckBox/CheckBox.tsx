@@ -7,7 +7,7 @@ const CheckBox:FC<CheckBoxProps> = ({title, onClick}) => {
    const [isChecked, setChecked] = useState<boolean>(false)
    const handleClick = () => {
       setChecked(!isChecked)
-      onClick(isChecked)
+      onClick(!isChecked)
    }
 
   return (
@@ -15,9 +15,13 @@ const CheckBox:FC<CheckBoxProps> = ({title, onClick}) => {
        <input 
        type="checkbox"
        checked={isChecked}
-       onClick={handleClick}
+       onChange={handleClick}
        />
-       {title}
+   
+       <p 
+         style={isChecked ? {color: 'white'} : {}} 
+         onClick={handleClick}>{title}
+       </p>
     </div>
   )
 }

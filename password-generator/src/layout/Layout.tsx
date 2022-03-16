@@ -15,7 +15,7 @@ const Layout= () => {
         <Navbar/>
         <Main/>
       </div>
-      
+           
       <Footer/>
       </div>
     </>

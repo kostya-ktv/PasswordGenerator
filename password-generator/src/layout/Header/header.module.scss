@@ -8,4 +8,9 @@
 
 .menu {
    @include flexCenter;
+   .name {
+      text-transform: uppercase;
+      font-family: 'Courier New', Courier, monospace;
+      letter-spacing: 6px;
+   }
 }

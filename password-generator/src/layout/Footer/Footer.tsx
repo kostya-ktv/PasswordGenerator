@@ -1,16 +1,14 @@
-import React from 'react'
+import { useDispatch } from 'react-redux'
 import Button from '../../components/Button/Button'
-import Range from '../../components/Range/Range'
+import { generatePassword_action } from '../../store/actions/password-actions'
 import styles from './footer.module.scss'
-type Props = {}
 
-const Footer = (props: Props) => {
+const Footer = () => {
+  const dispatch = useDispatch()
   return (
     <div className={styles.footer}>
-         <Button type='START' label='Click'/>
-         <Button type='START' label='Click'/>
-         <Range title='Password Length'/>
-       </div>
+         <Button type='START' label='Generate' onClick={() => generatePassword_action(dispatch)}/>
+    </div>
   )
 }
 

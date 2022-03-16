@@ -1,3 +1,4 @@
 export interface RangeProps {
-   title: string
+   title: string;
+   onChange: (val: number) => void
 }

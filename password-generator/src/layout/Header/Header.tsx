@@ -1,4 +1,4 @@
-import Button from '../../components/Button/Button'
+import IconSelector from '../../components/IconSelector/IconSelector'
 import styles from './header.module.scss'
 
 export const Header = () => {
@@ -6,6 +6,8 @@ export const Header = () => {
       <>
        <div className={styles.header}>
           <div className={styles.menu}>
+             <IconSelector title='LOGO'/>
+             <p className={styles.name}>Fast-Password-Generator</p>
 
          </div>
       </div>

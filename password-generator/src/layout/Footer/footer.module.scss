@@ -2,5 +2,6 @@
 .footer {
    @include layoutElementStyle;
    @include flexCenter;
+   justify-content: flex-end;
    height: 60px;
 }

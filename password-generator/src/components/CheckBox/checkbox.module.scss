@@ -6,4 +6,7 @@
    input {
       margin-right: 5px;
    }
+   p:hover, input:hover{
+      cursor: pointer;
+   }
 }

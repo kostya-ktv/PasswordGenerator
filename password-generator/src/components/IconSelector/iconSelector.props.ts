@@ -2,6 +2,6 @@ export interface IconSelectorProps {
    title: IconSelectorOptions
 }
 
-export type IconSelectorOptions = 'START'
+export type IconSelectorOptions = 'START' | 'LOGO'
 
 
