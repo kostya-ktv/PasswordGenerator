@@ -3,13 +3,14 @@
 
 .wrapper {
    @include flexCenter;
-   flex-direction: column;
+   flex-direction: row;
    width: fit-content;
    
    p {
       @include fontSettings;
       transition: all .3s;
-      margin-bottom: 6px;
+      margin-right: 6px;
+      font-size: 0.8rem;
    }
    &:hover p, &:hover .btn, &:hover{
    cursor: pointer;
@@ -19,25 +20,24 @@
       color: white
    }
    &:hover .btn {
-      box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.3);
+      box-shadow: 0px 0px 8px rgba(255, 255, 255, 1);
    }
    .btn {
       transition: all .3s;
       @include flexCenter;
-      height: 30px;
-      width: 30px;
+      height: 40px;
+      width: 40px;
       border-radius: 50%;
       background: rgb(5,141,217);
       background: linear-gradient(90deg, rgba(5,141,217,1) 0%, rgba(102,171,209,1) 50%, rgba(5,141,217,1) 100%);
-      &:hover svg{
-         fill: #FFF;
-      }
+
       svg {
-         height: 12px;
-         width: 12px;
-         fill: rgb(199, 199, 199);
-         
+         height: 20px;
+         width: 20px;
+         fill: rgb(204, 204, 218); 
       }
+
+      
       
    }
    

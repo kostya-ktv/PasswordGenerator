@@ -1,4 +1,5 @@
 export interface CheckBoxProps {
    title: string
-   onClick: (val: boolean) => void
+   onClick: (val: boolean) => void,
+   disable?: boolean
 }

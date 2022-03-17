@@ -3,25 +3,61 @@
 .main {
    @include layoutElementStyle;
    @include flexCenter;
+   flex-direction: column;
    flex: 2;
    position: relative;
    width: 100%;
    .password {
-      // @include flexCenter;
+      cursor: pointer;
       background-color: rgb(49, 51, 53);
       border-radius: 8px;
+      border: none;
       box-shadow: 0px 1px 6px rgb(207, 207, 207);
       padding: 10px;
       max-height: 200px;
-      font-size: 0.6rem;
+      font-size: 1rem;
       font-family: 'Courier New', Courier, monospace;
       color: rgb(172, 172, 172);
       overflow-y: auto;
+      word-wrap: break-word;
+      max-width: 250px;    
       &:hover {
-         color: white;
-         font-weight: 600;
-         cursor: pointer;
-         background-color: rgb(68, 68, 68);
+         color: rgb(230, 228, 228);
+         font-weight: 400;
+         transform: translate(-1%,-1%);
+      }
+      &:active {
+         transform: translate(0%,0%);
+      }
+   }
+   
+}
+.copy {
+   svg {
+      cursor: pointer;
+      margin-top: 10px;
+      fill: rgb(168, 168, 168);
+      height: 20px;
+      width: 20px;
+      &:hover {
+         fill: rgb(207, 207, 207);
+         transform: translate(-2%,-2%);
+      }
+      &:hover::after {
+         content: 'COPY';
+         position: absolute;
+         left: 0;
+         bottom: 0;
+         background: rgba(5,13,156,.55);
+         color: #fff;
+         text-align: center;
+         font-family: cursive;
+         font-size: 14px;
+         padding: 3px 0;
+         width: 100%;
+         }
+      &:active{
+         fill: rgb(0, 255, 13);
       }
    }
 }

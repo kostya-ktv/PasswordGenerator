@@ -4,4 +4,23 @@
    @include flexCenter;
    justify-content: flex-end;
    height: 60px;
+   justify-content: space-between;
+   .contacts {
+      display: flex;
+      flex-direction: column;
+      
+      cursor: pointer;
+      flex-direction: column;
+   }
+   .contacts p {
+      font-size: 0.5rem;
+      margin-top: 2px;
+      color: $textColor;
+   }
+   .icons svg {
+      height: 15px;
+      width: 15px;
+      margin-right: 5px;
+   }
 }
+
